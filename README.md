@@ -7,6 +7,7 @@ This mod adds a new "Super Civilization" that combines multiple powerful traits 
 The Super Civilization includes the following bonuses:
 
 ### Civilization Abilities
+
 - +2 Food, +2 Production, and +2 Gold in all cities
 - +30% Production toward districts
 - Receive a free builder in each new city
@@ -19,6 +20,7 @@ The Super Civilization includes the following bonuses:
   - Mountain tunnels unlocked with Foreign Trade civic (much earlier than other civilizations)
 
 ### Leader Abilities
+
 - All units gain +1 Movement
 - +4 Gold from each Trade Route
 - Cities get +4 Loyalty per turn
@@ -28,16 +30,17 @@ The Super Civilization includes the following bonuses:
 ## Installation
 
 ### Method 1: Manual Installation
+
 1. Create a folder in your Civilization VI Mods directory:
+
    - Windows: `Documents\My Games\Sid Meier's Civilization VI\Mods\SuperCivilization`
    - Mac: `~/Library/Application Support/Sid Meier's Civilization VI/Mods/SuperCivilization`
    - Linux: `~/.local/share/aspyr-media/Sid Meier's Civilization VI/Mods/SuperCivilization`
-
 2. Copy all files from this mod into that folder.
-
 3. Launch Civilization VI, go to "Additional Content" -> "Mods", enable "Super Civilization Cheat Mod", and click "Next".
 
 ### Method 2: Using the Mod in a Development Environment
+
 1. Open the Civilization VI SDK (available via Steam as "Sid Meier's Civilization VI Development Tools")
 2. Go to File -> Open Project
 3. Navigate to the location of this mod and open it
@@ -69,4 +72,4 @@ This mod is provided for personal use only. Feel free to modify it for your own 
 ## Credits
 
 Created by: Your Name
-Based on: Sid Meier's Civilization VI by Firaxis Games 
+Based on: Sid Meier's Civilization VI by Firaxis Games
