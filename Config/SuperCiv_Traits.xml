@@ -89,6 +89,42 @@
       <Permanent>true</Permanent>
       <OwnerRequirementSetId>PLAYER_IS_SUPER_LEADER</OwnerRequirementSetId>
     </Row>
+    
+    <!-- Inca Mountain Abilities (Mit'a) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_CIV_ALLOW_MOUNTAIN_WORKED</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierType>MODIFIER_SUPER_CIV_MOUNTAIN_PRODUCTION_YIELD</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+      <SubjectRequirementSetId>PLOT_HAS_MOUNTAIN_REQUIREMENTS</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierType>MODIFIER_SUPER_CIV_MOUNTAIN_FOOD_YIELD</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+      <SubjectRequirementSetId>PLOT_HAS_MOUNTAIN_REQUIREMENTS</SubjectRequirementSetId>
+    </Row>
+    <!-- Inca Tunnel Ability (Qhapaq Ñan) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_CIV_EARLY_MOUNTAIN_TUNNEL</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+    </Row>
+    <!-- Terrace Farm Improvement -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_CIV_GRANT_TERRACE_FARM</ModifierType>
+      <RunOnce>true</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+    </Row>
   </ModifierTypes>
 
   <!-- Civilization Trait: Apply all the modifiers -->
@@ -106,6 +142,13 @@
     <Row TraitType="TRAIT_LEADER_SUPER_POWERS" ModifierId="MODIFIER_SUPER_PLAYER_UNITS_MOVEMENT_BONUS" />
     <Row TraitType="TRAIT_LEADER_SUPER_POWERS" ModifierId="MODIFIER_SUPER_PLAYER_TRADE_ROUTES_GOLD_BONUS" />
     <Row TraitType="TRAIT_LEADER_SUPER_POWERS" ModifierId="MODIFIER_SUPER_PLAYER_BUILDER_CHARGES" />
+    
+    <!-- Inca Abilities -->
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_CIV_ALLOW_MOUNTAIN_WORKED" />
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_CIV_MOUNTAIN_PRODUCTION_YIELD" />
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_CIV_MOUNTAIN_FOOD_YIELD" />
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_CIV_EARLY_MOUNTAIN_TUNNEL" />
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_CIV_GRANT_TERRACE_FARM" />
   </TraitModifiers>
 
   <!-- Modifier Arguments for specific values -->
@@ -170,6 +213,52 @@
       <Name>Amount</Name>
       <Value>2</Value>
     </Row>
+    
+    <!-- Mountain Can Be Worked -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_CIV_ALLOW_MOUNTAIN_WORKED</ModifierId>
+      <Name>TerrainType</Name>
+      <Value>TERRAIN_MOUNTAIN</Value>
+    </Row>
+    <!-- Mountain Production Yield -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_CIV_MOUNTAIN_PRODUCTION_YIELD</ModifierId>
+      <Name>YieldType</Name>
+      <Value>YIELD_PRODUCTION</Value>
+    </Row>
+    <Row>
+      <ModifierId>MODIFIER_SUPER_CIV_MOUNTAIN_PRODUCTION_YIELD</ModifierId>
+      <Name>Amount</Name>
+      <Value>2</Value>
+    </Row>
+    <!-- Mountain Food Yield -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_CIV_MOUNTAIN_FOOD_YIELD</ModifierId>
+      <Name>YieldType</Name>
+      <Value>YIELD_FOOD</Value>
+    </Row>
+    <Row>
+      <ModifierId>MODIFIER_SUPER_CIV_MOUNTAIN_FOOD_YIELD</ModifierId>
+      <Name>Amount</Name>
+      <Value>1</Value>
+    </Row>
+    <!-- Early Mountain Tunnel -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_CIV_EARLY_MOUNTAIN_TUNNEL</ModifierId>
+      <Name>ImprovementType</Name>
+      <Value>IMPROVEMENT_MOUNTAIN_TUNNEL</Value>
+    </Row>
+    <Row>
+      <ModifierId>MODIFIER_SUPER_CIV_EARLY_MOUNTAIN_TUNNEL</ModifierId>
+      <Name>CivicType</Name>
+      <Value>CIVIC_FOREIGN_TRADE</Value>
+    </Row>
+    <!-- Terrace Farm Improvement -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_CIV_GRANT_TERRACE_FARM</ModifierId>
+      <Name>ImprovementType</Name>
+      <Value>IMPROVEMENT_TERRACE_FARM</Value>
+    </Row>
   </ModifierArguments>
 
   <!-- Requirement Sets for applying modifiers appropriately -->
@@ -192,6 +281,10 @@
     </Row>
     <Row>
       <RequirementSetId>CITY_IS_OWNER_CAPITAL_CONTINENT</RequirementSetId>
+      <RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+    </Row>
+    <Row>
+      <RequirementSetId>PLOT_HAS_MOUNTAIN_REQUIREMENTS</RequirementSetId>
       <RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
     </Row>
   </RequirementSets>
@@ -222,6 +315,10 @@
       <RequirementSetId>CITY_IS_OWNER_CAPITAL_CONTINENT</RequirementSetId>
       <RequirementId>REQUIRES_CITY_IS_OWNER</RequirementId>
     </Row>
+    <Row>
+      <RequirementSetId>PLOT_HAS_MOUNTAIN_REQUIREMENTS</RequirementSetId>
+      <RequirementId>REQUIRES_PLOT_HAS_MOUNTAIN</RequirementId>
+    </Row>
   </RequirementSetRequirements>
 
   <!-- Requirements themselves -->
@@ -246,6 +343,10 @@
       <RequirementId>REQUIRES_UNIT_ON_HOME_CONTINENT</RequirementId>
       <RequirementType>REQUIREMENT_UNIT_ON_HOME_CONTINENT</RequirementType>
     </Row>
+    <Row>
+      <RequirementId>REQUIRES_PLOT_HAS_MOUNTAIN</RequirementId>
+      <RequirementType>REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES</RequirementType>
+    </Row>
   </Requirements>
 
   <!-- Requirement Arguments -->
@@ -259,6 +360,11 @@
       <RequirementId>REQUIRES_PLAYER_HAS_SUPER_LEADER</RequirementId>
       <Name>LeaderType</Name>
       <Value>LEADER_SUPER</Value>
+    </Row>
+    <Row>
+      <RequirementId>REQUIRES_PLOT_HAS_MOUNTAIN</RequirementId>
+      <Name>TerrainType</Name>
+      <Value>TERRAIN_MOUNTAIN</Value>
     </Row>
   </RequirementArguments>
 </GameData> 

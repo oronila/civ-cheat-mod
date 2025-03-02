@@ -36,7 +36,7 @@
       <Text>Ultimate Civilization Powers</Text>
     </Row>
     <Row Tag="LOC_TRAIT_CIVILIZATION_SUPER_POWERS_DESCRIPTION" Language="en_US">
-      <Text>+2 [ICON_Food] Food, +2 [ICON_Production] Production, and +2 [ICON_Gold] Gold in all cities. +30% [ICON_Production] Production toward districts. Receive a free builder in each new city. +4 [ICON_Culture] Culture and +4 [ICON_Science] Science per turn. Land military units receive +5 [ICON_Strength] Combat Strength when fighting on your home continent.</Text>
+      <Text>+2 [ICON_Food] Food, +2 [ICON_Production] Production, and +2 [ICON_Gold] Gold in all cities. +30% [ICON_Production] Production toward districts. Receive a free builder in each new city. +4 [ICON_Culture] Culture and +4 [ICON_Science] Science per turn. Land military units receive +5 [ICON_Strength] Combat Strength when fighting on your home continent. Citizens can work Mountain tiles which provide +2 [ICON_Production] Production. Mountain tiles provide +1 [ICON_Food] Food, and can support Terrace Farms. Tunnel improvements unlocked with Foreign Trade civic.</Text>
     </Row>
     
     <Row Tag="LOC_TRAIT_LEADER_SUPER_POWERS_NAME" Language="en_US">

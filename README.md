@@ -12,6 +12,11 @@ The Super Civilization includes the following bonuses:
 - Receive a free builder in each new city
 - +4 Culture and +4 Science per turn
 - Land military units receive +5 Combat Strength when fighting on your home continent
+- **Inca Abilities:**
+  - Citizens can work Mountain tiles which provide +2 Production
+  - Mountain tiles provide +1 Food, increasing to +2 Food with a Terrace Farm adjacent to a Mountain
+  - Can build Terrace Farms on Hills and Mountain tiles
+  - Mountain tunnels unlocked with Foreign Trade civic (much earlier than other civilizations)
 
 ### Leader Abilities
 - All units gain +1 Movement
