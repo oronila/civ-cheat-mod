@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <LocalizedText>
+    <!-- Mod Information -->
+    <Row Tag="LOC_MOD_SUPER_CIVILIZATION_NAME" Language="en_US">
+      <Text>Super Civilization Cheat Mod</Text>
+    </Row>
+    <Row Tag="LOC_MOD_SUPER_CIVILIZATION_DESCRIPTION" Language="en_US">
+      <Text>Adds a new civilization that combines the best unique abilities and bonuses from multiple civilizations.</Text>
+    </Row>
+    <Row Tag="LOC_MOD_SUPER_CIVILIZATION_TEASER" Language="en_US">
+      <Text>A cheaty civilization with combined powers!</Text>
+    </Row>
+	
+    <!-- Civilization Definitions -->
+    <Row Tag="LOC_CIVILIZATION_SUPER_NAME" Language="en_US">
+      <Text>Super Civilization</Text>
+    </Row>
+    <Row Tag="LOC_CIVILIZATION_SUPER_DESCRIPTION" Language="en_US">
+      <Text>An overpowered civilization combining multiple bonuses and abilities</Text>
+    </Row>
+    <Row Tag="LOC_CIVILIZATION_SUPER_ADJECTIVE" Language="en_US">
+      <Text>Super</Text>
+    </Row>
+	
+    <!-- Leader Definitions -->
+    <Row Tag="LOC_LEADER_SUPER_NAME" Language="en_US">
+      <Text>Super Leader</Text>
+    </Row>
+    <Row Tag="LOC_LEADER_SUPER_QUOTE" Language="en_US">
+      <Text>With great power comes great victory!</Text>
+    </Row>
+
+    <!-- Trait Descriptions -->
+    <Row Tag="LOC_TRAIT_CIVILIZATION_SUPER_POWERS_NAME" Language="en_US">
+      <Text>Ultimate Civilization Powers</Text>
+    </Row>
+    <Row Tag="LOC_TRAIT_CIVILIZATION_SUPER_POWERS_DESCRIPTION" Language="en_US">
+      <Text>+2 [ICON_Food] Food, +2 [ICON_Production] Production, and +2 [ICON_Gold] Gold in all cities. +30% [ICON_Production] Production toward districts. Receive a free builder in each new city. +4 [ICON_Culture] Culture and +4 [ICON_Science] Science per turn. Land military units receive +5 [ICON_Strength] Combat Strength when fighting on your home continent.</Text>
+    </Row>
+    
+    <Row Tag="LOC_TRAIT_LEADER_SUPER_POWERS_NAME" Language="en_US">
+      <Text>Ultimate Leader Powers</Text>
+    </Row>
+    <Row Tag="LOC_TRAIT_LEADER_SUPER_POWERS_DESCRIPTION" Language="en_US">
+      <Text>All units gain +1 [ICON_Movement] Movement. +4 [ICON_Gold] Gold from each Trade Route. Cities get +4 Loyalty per turn. Builders get +2 extra build charges. Can build any district regardless of population requirements.</Text>
+    </Row>
+  </LocalizedText>
+</GameData> 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <IconDefinitions>
+    <Row Name="ICON_CIVILIZATION_SUPER" Atlas="ICON_ATLAS_CIVILIZATIONS" IconSize="256" IconsPerRow="8" IconsPerColumn="8" IconIndex="0"/>
+    <Row Name="ICON_LEADER_SUPER" Atlas="ICON_ATLAS_LEADERS" IconSize="256" IconsPerRow="8" IconsPerColumn="8" IconIndex="0"/>
+  </IconDefinitions>
+</GameData> 

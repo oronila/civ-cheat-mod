@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="6da07d60-2a53-4d4d-aff9-5d8ea5e6a249" version="1.0">
+	<Properties>
+		<Name>LOC_MOD_SUPER_CIVILIZATION_NAME</Name>
+		<Description>LOC_MOD_SUPER_CIVILIZATION_DESCRIPTION</Description>
+		<Created>2023-05-01</Created>
+		<Teaser>LOC_MOD_SUPER_CIVILIZATION_TEASER</Teaser>
+		<Authors>Your Name</Authors>
+		<SpecialThanks>Civilization VI Modding Community</SpecialThanks>
+		<CompatibleVersions>2.0</CompatibleVersions>
+	</Properties>
+	<FrontEndActions>
+		<UpdateDatabase id="SuperCiv_Config">
+			<File>Config/SuperCiv_Config.xml</File>
+		</UpdateDatabase>
+		<UpdateText id="SuperCiv_Text">
+			<File>Text/SuperCiv_Text.xml</File>
+		</UpdateText>
+		<UpdateIcons id="SuperCiv_Icons">
+			<File>Config/SuperCiv_Icons.xml</File>
+		</UpdateIcons>
+		<UpdateColors id="SuperCiv_Colors">
+			<File>Config/SuperCiv_Colors.xml</File>
+		</UpdateColors>
+	</FrontEndActions>
+	<InGameActions>
+		<UpdateDatabase id="SuperCiv_Gameplay">
+			<File>Config/SuperCiv_Civilizations.xml</File>
+			<File>Config/SuperCiv_Leaders.xml</File>
+			<File>Config/SuperCiv_Traits.xml</File>
+		</UpdateDatabase>
+		<UpdateText id="SuperCiv_Text">
+			<File>Text/SuperCiv_Text.xml</File>
+		</UpdateText>
+		<AddGameplayScripts id="SuperCiv_Scripts">
+			<File>Scripts/SuperCiv_Scripts.lua</File>
+		</AddGameplayScripts>
+		<UpdateIcons id="SuperCiv_Icons">
+			<File>Config/SuperCiv_Icons.xml</File>
+		</UpdateIcons>
+		<UpdateColors id="SuperCiv_Colors">
+			<File>Config/SuperCiv_Colors.xml</File>
+		</UpdateColors>
+	</InGameActions>
+	<Files>
+		<File>Config/SuperCiv_Config.xml</File>
+		<File>Config/SuperCiv_Civilizations.xml</File>
+		<File>Config/SuperCiv_Leaders.xml</File>
+		<File>Config/SuperCiv_Traits.xml</File>
+		<File>Config/SuperCiv_Icons.xml</File>
+		<File>Config/SuperCiv_Colors.xml</File>
+		<File>Text/SuperCiv_Text.xml</File>
+		<File>Scripts/SuperCiv_Scripts.lua</File>
+	</Files>
+</Mod> 

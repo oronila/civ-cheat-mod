@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Types>
+    <Row Type="CIVILIZATION_SUPER" Kind="KIND_CIVILIZATION" />
+  </Types>
+
+  <Civilizations>
+    <Row CivilizationType="CIVILIZATION_SUPER" 
+         Name="LOC_CIVILIZATION_SUPER_NAME" 
+         Description="LOC_CIVILIZATION_SUPER_DESCRIPTION" 
+         Adjective="LOC_CIVILIZATION_SUPER_ADJECTIVE"
+         StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV"
+         RandomCityNameDepth="5"
+         Ethnicity="ETHNICITY_EUROPEAN" />
+  </Civilizations>
+
+  <CivilizationTraits>
+    <Row CivilizationType="CIVILIZATION_SUPER" TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" />
+  </CivilizationTraits>
+
+  <CivilizationStartingUnits>
+    <Row CivilizationType="CIVILIZATION_SUPER" District="DISTRICT_CITY_CENTER" Unit="UNIT_SETTLER" Count="3"/>
+    <Row CivilizationType="CIVILIZATION_SUPER" District="DISTRICT_CITY_CENTER" Unit="UNIT_BUILDER" Count="3"/>
+    <Row CivilizationType="CIVILIZATION_SUPER" District="DISTRICT_CITY_CENTER" Unit="UNIT_WARRIOR" Count="3"/>
+    <Row CivilizationType="CIVILIZATION_SUPER" District="DISTRICT_CITY_CENTER" Unit="UNIT_SCOUT" Count="2"/>
+  </CivilizationStartingUnits>
+
+  <StartBiasTerrains>
+    <Row CivilizationType="CIVILIZATION_SUPER" TerrainType="TERRAIN_PLAINS" Tier="1"/>
+  </StartBiasTerrains>
+
+  <CivilizationCitizenNames>
+    <Row CivilizationType="CIVILIZATION_SUPER" CitizenName="LOC_CITIZEN_SUPER_MALE_1" Female="0"/>
+    <Row CivilizationType="CIVILIZATION_SUPER" CitizenName="LOC_CITIZEN_SUPER_FEMALE_1" Female="1"/>
+  </CivilizationCitizenNames>
+
+  <CivilizationInfo>
+    <Row CivilizationType="CIVILIZATION_SUPER" Header="LOC_CIVINFO_LOCATION" Caption="LOC_CIVINFO_SUPER_LOCATION" SortIndex="10"/>
+  </CivilizationInfo>
+</GameData> 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Players>
+    <Row Domain="Players:StandardPlayers" CivilizationType="CIVILIZATION_SUPER" LeaderType="LEADER_SUPER" CivilizationName="LOC_CIVILIZATION_SUPER_NAME" LeaderName="LOC_LEADER_SUPER_NAME"/>
+  </Players>
+  <PlayerItems>
+    <Row Domain="Players:StandardPlayers" CivilizationType="CIVILIZATION_SUPER" LeaderType="LEADER_SUPER" Type="UNIT_BUILDER" Icon="ICON_UNIT_BUILDER" Name="LOC_UNIT_BUILDER_NAME" Description="LOC_UNIT_BUILDER_DESCRIPTION" SortIndex="10"/>
+  </PlayerItems>
+</GameData> 

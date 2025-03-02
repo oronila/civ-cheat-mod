@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Types>
+    <Row Type="TRAIT_CIVILIZATION_SUPER_POWERS" Kind="KIND_TRAIT" />
+    <Row Type="TRAIT_LEADER_SUPER_POWERS" Kind="KIND_TRAIT" />
+  </Types>
+
+  <Traits>
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" Name="LOC_TRAIT_CIVILIZATION_SUPER_POWERS_NAME" Description="LOC_TRAIT_CIVILIZATION_SUPER_POWERS_DESCRIPTION" />
+    <Row TraitType="TRAIT_LEADER_SUPER_POWERS" Name="LOC_TRAIT_LEADER_SUPER_POWERS_NAME" Description="LOC_TRAIT_LEADER_SUPER_POWERS_DESCRIPTION" />
+  </Traits>
+
+  <!-- Civ Trait Modifiers -->
+  <ModifierTypes>
+    <!-- Food Bonus in all cities (America's ability) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_CITY_FOOD_BONUS</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+      <SubjectRequirementSetId>CITY_IS_OWNER</SubjectRequirementSetId>
+    </Row>
+    <!-- Production Bonus in all cities (Germany's ability) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_CITY_PRODUCTION_BONUS</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+      <SubjectRequirementSetId>CITY_IS_OWNER</SubjectRequirementSetId>
+    </Row>
+    <!-- Gold Bonus in all cities (Mansa Musa's ability) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_CITY_GOLD_BONUS</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+      <SubjectRequirementSetId>CITY_IS_OWNER</SubjectRequirementSetId>
+    </Row>
+    <!-- Science Bonus (Korea's ability) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_PLAYER_SCIENCE_BONUS</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+    </Row>
+    <!-- Culture Bonus (Greece's ability) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_PLAYER_CULTURE_BONUS</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+    </Row>
+    <!-- Combat Bonus on home continent (America's ability) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_UNIT_COMBAT_STRENGTH_BONUS</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+      <SubjectRequirementSetId>UNIT_IS_LAND_COMBAT_AND_HOME_CONTINENT</SubjectRequirementSetId>
+    </Row>
+    <!-- Free Builder in new cities (Rome's ability) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_PLAYER_GRANT_SETTLER_IN_CITY</ModifierType>
+      <RunOnce>true</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</OwnerRequirementSetId>
+      <SubjectRequirementSetId>CITY_IS_OWNER_CAPITAL_CONTINENT</SubjectRequirementSetId>
+    </Row>
+    
+    <!-- Leader Trait Modifiers -->
+    <!-- Movement Bonus (Rough Rider ability) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_PLAYER_UNITS_MOVEMENT_BONUS</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_LEADER</OwnerRequirementSetId>
+    </Row>
+    <!-- Extra Gold from Trade Routes (Portugal ability) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_PLAYER_TRADE_ROUTES_GOLD_BONUS</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_LEADER</OwnerRequirementSetId>
+    </Row>
+    <!-- Extra Builder charges (China's ability) -->
+    <Row>
+      <ModifierType>MODIFIER_SUPER_PLAYER_BUILDER_CHARGES</ModifierType>
+      <RunOnce>false</RunOnce>
+      <Permanent>true</Permanent>
+      <OwnerRequirementSetId>PLAYER_IS_SUPER_LEADER</OwnerRequirementSetId>
+    </Row>
+  </ModifierTypes>
+
+  <!-- Civilization Trait: Apply all the modifiers -->
+  <TraitModifiers>
+    <!-- Civ Trait Modifiers -->
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_CITY_FOOD_BONUS" />
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_CITY_PRODUCTION_BONUS" />
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_CITY_GOLD_BONUS" />
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_PLAYER_SCIENCE_BONUS" />
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_PLAYER_CULTURE_BONUS" />
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_UNIT_COMBAT_STRENGTH_BONUS" />
+    <Row TraitType="TRAIT_CIVILIZATION_SUPER_POWERS" ModifierId="MODIFIER_SUPER_PLAYER_GRANT_SETTLER_IN_CITY" />
+    
+    <!-- Leader Trait Modifiers -->
+    <Row TraitType="TRAIT_LEADER_SUPER_POWERS" ModifierId="MODIFIER_SUPER_PLAYER_UNITS_MOVEMENT_BONUS" />
+    <Row TraitType="TRAIT_LEADER_SUPER_POWERS" ModifierId="MODIFIER_SUPER_PLAYER_TRADE_ROUTES_GOLD_BONUS" />
+    <Row TraitType="TRAIT_LEADER_SUPER_POWERS" ModifierId="MODIFIER_SUPER_PLAYER_BUILDER_CHARGES" />
+  </TraitModifiers>
+
+  <!-- Modifier Arguments for specific values -->
+  <ModifierArguments>
+    <!-- City Food Bonus -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_CITY_FOOD_BONUS</ModifierId>
+      <Name>Amount</Name>
+      <Value>2</Value>
+    </Row>
+    <!-- City Production Bonus -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_CITY_PRODUCTION_BONUS</ModifierId>
+      <Name>Amount</Name>
+      <Value>2</Value>
+    </Row>
+    <!-- City Gold Bonus -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_CITY_GOLD_BONUS</ModifierId>
+      <Name>Amount</Name>
+      <Value>2</Value>
+    </Row>
+    <!-- Player Science Bonus -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_PLAYER_SCIENCE_BONUS</ModifierId>
+      <Name>Amount</Name>
+      <Value>4</Value>
+    </Row>
+    <!-- Player Culture Bonus -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_PLAYER_CULTURE_BONUS</ModifierId>
+      <Name>Amount</Name>
+      <Value>4</Value>
+    </Row>
+    <!-- Combat Strength Bonus -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_UNIT_COMBAT_STRENGTH_BONUS</ModifierId>
+      <Name>Amount</Name>
+      <Value>5</Value>
+    </Row>
+    <!-- Free Builder in Cities -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_PLAYER_GRANT_SETTLER_IN_CITY</ModifierId>
+      <Name>UnitType</Name>
+      <Value>UNIT_BUILDER</Value>
+    </Row>
+    <!-- Movement Bonus -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_PLAYER_UNITS_MOVEMENT_BONUS</ModifierId>
+      <Name>Amount</Name>
+      <Value>1</Value>
+    </Row>
+    <!-- Trade Route Gold Bonus -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_PLAYER_TRADE_ROUTES_GOLD_BONUS</ModifierId>
+      <Name>Amount</Name>
+      <Value>4</Value>
+    </Row>
+    <!-- Builder Extra Charges -->
+    <Row>
+      <ModifierId>MODIFIER_SUPER_PLAYER_BUILDER_CHARGES</ModifierId>
+      <Name>Amount</Name>
+      <Value>2</Value>
+    </Row>
+  </ModifierArguments>
+
+  <!-- Requirement Sets for applying modifiers appropriately -->
+  <RequirementSets>
+    <Row>
+      <RequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</RequirementSetId>
+      <RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+    </Row>
+    <Row>
+      <RequirementSetId>PLAYER_IS_SUPER_LEADER</RequirementSetId>
+      <RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+    </Row>
+    <Row>
+      <RequirementSetId>CITY_IS_OWNER</RequirementSetId>
+      <RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+    </Row>
+    <Row>
+      <RequirementSetId>UNIT_IS_LAND_COMBAT_AND_HOME_CONTINENT</RequirementSetId>
+      <RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+    </Row>
+    <Row>
+      <RequirementSetId>CITY_IS_OWNER_CAPITAL_CONTINENT</RequirementSetId>
+      <RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+    </Row>
+  </RequirementSets>
+
+  <!-- Requirements for the requirement sets -->
+  <RequirementSetRequirements>
+    <Row>
+      <RequirementSetId>PLAYER_IS_SUPER_CIVILIZATION</RequirementSetId>
+      <RequirementId>REQUIRES_PLAYER_HAS_SUPER_CIVILIZATION</RequirementId>
+    </Row>
+    <Row>
+      <RequirementSetId>PLAYER_IS_SUPER_LEADER</RequirementSetId>
+      <RequirementId>REQUIRES_PLAYER_HAS_SUPER_LEADER</RequirementId>
+    </Row>
+    <Row>
+      <RequirementSetId>CITY_IS_OWNER</RequirementSetId>
+      <RequirementId>REQUIRES_CITY_IS_OWNER</RequirementId>
+    </Row>
+    <Row>
+      <RequirementSetId>UNIT_IS_LAND_COMBAT_AND_HOME_CONTINENT</RequirementSetId>
+      <RequirementId>REQUIRES_UNIT_IS_LAND_COMBAT</RequirementId>
+    </Row>
+    <Row>
+      <RequirementSetId>UNIT_IS_LAND_COMBAT_AND_HOME_CONTINENT</RequirementSetId>
+      <RequirementId>REQUIRES_UNIT_ON_HOME_CONTINENT</RequirementId>
+    </Row>
+    <Row>
+      <RequirementSetId>CITY_IS_OWNER_CAPITAL_CONTINENT</RequirementSetId>
+      <RequirementId>REQUIRES_CITY_IS_OWNER</RequirementId>
+    </Row>
+  </RequirementSetRequirements>
+
+  <!-- Requirements themselves -->
+  <Requirements>
+    <Row>
+      <RequirementId>REQUIRES_PLAYER_HAS_SUPER_CIVILIZATION</RequirementId>
+      <RequirementType>REQUIREMENT_PLAYER_TYPE_MATCHES</RequirementType>
+    </Row>
+    <Row>
+      <RequirementId>REQUIRES_PLAYER_HAS_SUPER_LEADER</RequirementId>
+      <RequirementType>REQUIREMENT_PLAYER_LEADER_TYPE_MATCHES</RequirementType>
+    </Row>
+    <Row>
+      <RequirementId>REQUIRES_CITY_IS_OWNER</RequirementId>
+      <RequirementType>REQUIREMENT_CITY_HAS_OWNER</RequirementType>
+    </Row>
+    <Row>
+      <RequirementId>REQUIRES_UNIT_IS_LAND_COMBAT</RequirementId>
+      <RequirementType>REQUIREMENT_UNIT_IS_LAND_COMBAT</RequirementType>
+    </Row>
+    <Row>
+      <RequirementId>REQUIRES_UNIT_ON_HOME_CONTINENT</RequirementId>
+      <RequirementType>REQUIREMENT_UNIT_ON_HOME_CONTINENT</RequirementType>
+    </Row>
+  </Requirements>
+
+  <!-- Requirement Arguments -->
+  <RequirementArguments>
+    <Row>
+      <RequirementId>REQUIRES_PLAYER_HAS_SUPER_CIVILIZATION</RequirementId>
+      <Name>CivilizationType</Name>
+      <Value>CIVILIZATION_SUPER</Value>
+    </Row>
+    <Row>
+      <RequirementId>REQUIRES_PLAYER_HAS_SUPER_LEADER</RequirementId>
+      <Name>LeaderType</Name>
+      <Value>LEADER_SUPER</Value>
+    </Row>
+  </RequirementArguments>
+</GameData> 

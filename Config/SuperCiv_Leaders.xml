@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Types>
+    <Row Type="LEADER_SUPER" Kind="KIND_LEADER" />
+  </Types>
+
+  <Leaders>
+    <Row LeaderType="LEADER_SUPER" 
+         Name="LOC_LEADER_SUPER_NAME" 
+         InheritFrom="LEADER_DEFAULT"
+         SceneLighting="LIGHTING_AFTERNOON_SUNNY"/>
+  </Leaders>
+
+  <LeaderTraits>
+    <Row LeaderType="LEADER_SUPER" TraitType="TRAIT_LEADER_SUPER_POWERS" />
+  </LeaderTraits>
+
+  <LeaderQuotes>
+    <Row LeaderType="LEADER_SUPER" Quote="LOC_LEADER_SUPER_QUOTE" />
+  </LeaderQuotes>
+
+  <HistoricalAgendas>
+    <Row LeaderType="LEADER_SUPER" AgendaType="AGENDA_INDUSTRIALIST" />
+  </HistoricalAgendas>
+
+  <LeaderInfo>
+    <Row LeaderType="LEADER_SUPER" Header="LOC_CIVINFO_LOCATION" Caption="LOC_CIVINFO_SUPER_LOCATION" />
+  </LeaderInfo>
+</GameData> 

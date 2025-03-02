@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Colors>
+    <Row>
+      <Type>COLOR_SUPER_PRIMARY</Type>
+      <Red>1.0</Red>
+      <Green>0.8</Green>
+      <Blue>0.0</Blue>
+      <Alpha>1.0</Alpha>
+    </Row>
+    <Row>
+      <Type>COLOR_SUPER_SECONDARY</Type>
+      <Red>0.1</Red>
+      <Green>0.0</Green>
+      <Blue>0.5</Blue>
+      <Alpha>1.0</Alpha>
+    </Row>
+  </Colors>
+  <PlayerColors>
+    <Row>
+      <Type>LEADER_SUPER</Type>
+      <Usage>Unique</Usage>
+      <PrimaryColor>COLOR_SUPER_PRIMARY</PrimaryColor>
+      <SecondaryColor>COLOR_SUPER_SECONDARY</SecondaryColor>
+    </Row>
+    <Row>
+      <Type>CIVILIZATION_SUPER</Type>
+      <Usage>Unique</Usage>
+      <PrimaryColor>COLOR_SUPER_PRIMARY</PrimaryColor>
+      <SecondaryColor>COLOR_SUPER_SECONDARY</SecondaryColor>
+    </Row>
+  </PlayerColors>
+</GameData> 
